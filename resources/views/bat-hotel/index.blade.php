@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bat Hotel</title>
+    <link rel="icon" type="image/png" href="{{ asset('foto/logo.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -11,9 +12,13 @@
 </head>
 <body>
 
+<!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
     <div class="container">
-        <a class="navbar-brand logo fw-bold" href="#">Bat Hotel</a>
+        <a class="navbar-brand logo fw-bold d-flex align-items-center" href="#">
+            <img src="{{ asset('foto/logo.png') }}" alt="Logo" width="40" height="40" class="me-2">
+            Bat Hotel
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
